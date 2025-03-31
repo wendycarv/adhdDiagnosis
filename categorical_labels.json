@@ -1,0 +1,56 @@
+{
+    "Basic_Demos_Study_Site": {
+        "1": "Staten Island",
+        "2": "MRV",
+        "3": "Midtown",
+        "4": "Harlem",
+        "5": "SI RUMC"
+    },
+    "PreInt_Demos_Fam_Child_Ethnicity": {
+        "0": "Not Hispanic or Latino",
+        "1": "Hispanic or Latino",
+        "2": "Decline to specify",
+        "3": "Unknown"
+    },
+    "PreInt_Demos_Fam_Child_Race": {
+        "0": "White/Caucasian",
+        "1": "Black/African American",
+        "2": "Hispanic",
+        "3": "Asian",
+        "4": "Indian",
+        "5": "Native American Indian",
+        "6": "American Indian/Alaskan Native",
+        "7": "Native Hawaiian/Other Pacific Islander",
+        "8": "Two or more races",
+        "9": "Other race",
+        "10": "Unknown",
+        "11": "Choose not to specify"
+    },
+    "MRI_Track_Scan_Location": {
+        "1": "Staten Island",
+        "2": "RUBIC",
+        "3": "CBIC",
+        "4": "CUNY"
+    },
+    "Barratt_Edu": {
+        "3": "Less than 7th grade",
+        "6": "Junior high/Middle school (9th grade)",
+        "9": "Partial high school (10th or 11th grade)",
+        "12": "High school graduate",
+        "15": "Partial college (at least one year)",
+        "18": "College education",
+        "21": "Graduate degree"
+    },
+    "Barratt_Occ": {
+        "0": "Homemaker, stay at home parent.",
+        "5": "Day laborer, janitor, house cleaner, farm worker, food counter sales, food preparation worker, busboy.",
+        "10": "Garbage collector, short-order cook, cab driver, shoe sales, assembly line workers, masons, baggage porter.",
+        "15": "Painter, skilled construction trade, sales clerk, truck driver, cook, sales counter or general office clerk.",
+        "20": "Automobile mechanic, typist, locksmith, farmer, carpenter, receptionist, construction laborer, hairdresser.",
+        "25": "Machinist, musician, bookkeeper, secretary, insurance sales, cabinet maker, personnel specialist, welder.",
+        "30": "Supervisor, librarian, aircraft mechanic, artist and artisan, electrician, administrator, military enlisted personnel, buyer.",
+        "35": "Nurse, skilled technician, medical technician, counselor, manager, police and fire personnel, financial manager, physical, occupational, speech therapist.",
+        "40": "Mechanical, nuclear, and electrical engineer, educational administrator, veterinarian, military officer, elementary, high school and special education teacher.",
+        "45": "Physician, attorney, professor, chemical and aerospace engineer, judge, CEO, senior manager, public official, psychologist, pharmacist, accountant."
+    }
+}
