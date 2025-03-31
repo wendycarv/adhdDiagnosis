@@ -1,4 +1,12 @@
 {
+    "ADHD_Outcome": {
+        "0": "Other/None",
+        "1": "ADHD"
+    },
+    "Sex_F": {
+        "0": "Male",
+        "1": "Female"
+    },
     "Basic_Demos_Study_Site": {
         "1": "Staten Island",
         "2": "MRV",
