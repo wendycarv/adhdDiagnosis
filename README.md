@@ -1,6 +1,6 @@
 # ADHD Diagnosis and Sex Prediction
 
-# Project Overview
+## Project Overview
 This project aims to predict ADHD diagnosis and sex using functional brain imaging and sociodemographic data. Through techniques such as graphic neural networks for fMRI data and boosting or random forest for tabular sociodemographic data, we seek to provide insight into the human brain and change how ADHD is diagnosed. The refined model is an XGNN model–an ensemble of XGBoost and GNN. 
 
 ## Prerequisites
