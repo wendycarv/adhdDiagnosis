@@ -9,7 +9,7 @@ pip3 install -r requirements.txt
 ```
 
 ## Dataset
-Located in the /data folder in this repository. Alternatively, it can be downloaded directly from the Datathon's kaggle [here](https://www.kaggle.com/competitions/widsdatathon2025/data)
+The dataset folder can be downloaded directly from the Datathon's kaggle [here](https://www.kaggle.com/competitions/widsdatathon2025/data) (/data).
 
 This challenge uses data provided by the Healthy Brain Network (HBN), a scientific initiative of the Child Mind Institute, and the Reproducible Brain Charts Project (RBC). The data was collected by encouraging the participation of families who have concerns about mental health or learning challenges in their children. As previously mentioned, one concern here is that there may not be enough data from patients who do not present any abnormal brain activity–this will be addressed later. 
 The WiDS challenge provides a training folder (/data/TRAIN_NEW) that holds information regarding over 1,200 individuals. It includes the target information we wish to predict, which are the ADHD diagnosis and sex, functional MRI connectome matrices, and socio-demographic information. The latter includes the subject’s “handedness” or the parent’s education level, emotions, and other parenting information. All of the data consists of both quantitative and categorical metadata. 
