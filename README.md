@@ -1,35 +1,33 @@
 # ADHD Diagnosis and Sex Prediction
 
-# 1. Project Overview
+# Project Overview
 This project aims to predict ADHD diagnosis and sex using functional brain imaging and sociodemographic data. Through techniques such as graphic neural networks for fMRI data and boosting or random forest for tabular sociodemographic data, we seek to provide insight into the human brain and change how ADHD is diagnosed.
 
-# 2. Dataset
+# Running the notebook
+
+## Prerequisites
+```
+pip3 install -r requirements.txt
+```
+
+## Dataset
+Located in the /data folder in this repository. Alternatively, it can be downloaded directly from the Datathon's kaggle [here](https://www.kaggle.com/competitions/widsdatathon2025/data)
+
 This challenge uses data provided by the Healthy Brain Network (HBN), a scientific initiative of the Child Mind Institute, and the Reproducible Brain Charts Project (RBC). The data was collected by encouraging the participation of families who have concerns about mental health or learning challenges in their children. As previously mentioned, one concern here is that there may not be enough data from patients who do not present any abnormal brain activity–this will be addressed later. 
-The WiDS challenge provides a training folder (train_tsv) that holds information regarding over 1,200 individuals. It includes the target information we wish to predict, which are the ADHD diagnosis and sex, functional MRI connectome matrices, and socio-demographic information. The latter includes the subject’s “handedness” or the parent’s education level, emotions, and other parenting information. All of the data consists of both quantitative and categorical metadata. A test folder (test_tsv) is also provided, which has unseen data frames for a little over 300 subjects, and includes the same information as the training data. This will be used to evaluate the model’s predicted values. 
+The WiDS challenge provides a training folder (/data/TRAIN_NEW) that holds information regarding over 1,200 individuals. It includes the target information we wish to predict, which are the ADHD diagnosis and sex, functional MRI connectome matrices, and socio-demographic information. The latter includes the subject’s “handedness” or the parent’s education level, emotions, and other parenting information. All of the data consists of both quantitative and categorical metadata. 
 
-## Dataset Challenges
-Preliminary analysis shows a potential class imbalance (having a lot of data for individuals with ADHD and not as much for individuals without). This imbalance will require strategies such as data augmentation or weighted loss functions to ensure balanced learning across the two classes. 
+## Training and evaluation
+The refined model is located in the notebook "xgnn_final_model.ipynb". The examples for training and the evaluation results are in it. To comprehensively evaluate our model’s performance, we used the following: Weighted F1 Score, AUC-ROC, and accuracy.
 
-# 3. Evaluation Methodology
-To comprehensively evaluate our model’s performance, we will use a blend of quantitative metrics and qualitative assessments. 
-
-- **Quantitative Metric**:
-  - **Weighted F1 Score**: Measures the harmonic mean of precision and recall.
-  - **AUC-ROC (Area Under the Receiver Operating Characteristic Curve)**: Helps ensure model effectively distinguishes between positive and negative classes.
-  - **Accuracy**: The overall classification accuracy, aiming for a rate of 85%.
-- **Qualitative Metrics**:
-  - **SHAP (SHapley Additive exPlanations) or LIME (Local Interpretable Model-agnostic Explanations)**: Generate feature importance scores and visualize the contribution of individual features to the model's decisions.
-  - **F1 & AUC-ROCs**: Conduct a fairness analysis by segmenting performance metrics by gender.
-
-# 4. License
+# License
 This project is licensed under the MIT License.
 
-## References
+# References
 1. I. Robertson, "8th Annual WiDS Datathon Challenges: Unraveling the Mysteries of the Female Brain," WiDS Worldwide, Jan. 7, 2025. Available: https://www.widsworldwide.org/get-inspired/blog/8th-annual-wids-datathon-challenges-unraveling-the-mysteries-of-the-female-brain/.
 2. L. Wang, K. Li, and X. P. Hu, "Graph Convolutional Network for fMRI Analysis Based on Connectivity Neighborhood," Network Neuroscience, vol. 5, no. 1, pp. 83–95, 2021. DOI: https://doi.org/10.1162/netn_a_00171.
 3. B. Allen, "Why Tree-Based Models Beat Deep Learning on Tabular Data," Geek Culture, Medium, Dec. 2023. Available: https://medium.com/geekculture/why-tree-based-models-beat-deep-learning-on-tabular-data-fcad692b1456.
 4. M. P. Milham et al., "The ADHD-200 Consortium: A Model to Advance the Translational Potential of Neuroimaging in Clinical Neuroscience," Frontiers in Systems Neuroscience, vol. 6, 2012. Available: https://pmc.ncbi.nlm.nih.gov/articles/PMC4004765/.
-5. N. L. Nussbaum, "ADHD and female specific concerns: A review of the literature and clinical implications," J. Attention Disord., vol. 16, no. 2, pp. 87-100, 2011, doi: 10.1177/1087054711416909.
+5. N. L. Nussbaum, "ADHD and female-specific concerns: A review of the literature and clinical implications," J. Attention Disord., vol. 16, no. 2, pp. 87-100, 2011, doi: 10.1177/1087054711416909.
 6. "ADHD in women: Misunderstood symptoms and treatment," ADDitude Magazine, Apr. 26, 2022. [Online]. Available: https://www.additudemag.com/adhd-in-women-misunderstood-symptoms-treatment
 7. "ADHD in women: Why it's often misdiagnosed," Relational Psych, Sep. 7, 2023. [Online]. Available: https://www.relationalpsych.group/articles/adhd-in-women-why-its-often-misdiagnosed
 8. Paul L. Morgan et al., "Sociodemographic Disparities in Attention-Deficit/Hyperactivity Disorder Overdiagnosis and Overtreatment During Elementary School," Journal of Learning Disabilities, vol. 56, no. 5, pp. 359-370, 2023. [Online]. Available: https://www.sciencedirect.com/science/article/abs/pii/S0165178123003438
