@@ -1,9 +1,7 @@
 # ADHD Diagnosis and Sex Prediction
 
 # Project Overview
-This project aims to predict ADHD diagnosis and sex using functional brain imaging and sociodemographic data. Through techniques such as graphic neural networks for fMRI data and boosting or random forest for tabular sociodemographic data, we seek to provide insight into the human brain and change how ADHD is diagnosed.
-
-# Running the notebook
+This project aims to predict ADHD diagnosis and sex using functional brain imaging and sociodemographic data. Through techniques such as graphic neural networks for fMRI data and boosting or random forest for tabular sociodemographic data, we seek to provide insight into the human brain and change how ADHD is diagnosed. The refined model is an XGNN model–an ensemble of XGBoost and GNN. 
 
 ## Prerequisites
 ```
@@ -16,7 +14,7 @@ Located in the /data folder in this repository. Alternatively, it can be downloa
 This challenge uses data provided by the Healthy Brain Network (HBN), a scientific initiative of the Child Mind Institute, and the Reproducible Brain Charts Project (RBC). The data was collected by encouraging the participation of families who have concerns about mental health or learning challenges in their children. As previously mentioned, one concern here is that there may not be enough data from patients who do not present any abnormal brain activity–this will be addressed later. 
 The WiDS challenge provides a training folder (/data/TRAIN_NEW) that holds information regarding over 1,200 individuals. It includes the target information we wish to predict, which are the ADHD diagnosis and sex, functional MRI connectome matrices, and socio-demographic information. The latter includes the subject’s “handedness” or the parent’s education level, emotions, and other parenting information. All of the data consists of both quantitative and categorical metadata. 
 
-## Training and evaluation
+## Model training and evaluation
 The refined model is located in the notebook "xgnn_final_model.ipynb". The examples for training and the evaluation results are in it. To comprehensively evaluate our model’s performance, we used the following: Weighted F1 Score, AUC-ROC, and accuracy.
 
 # License
