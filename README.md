@@ -15,7 +15,7 @@ This challenge uses data provided by the Healthy Brain Network (HBN), a scientif
 The WiDS challenge provides a training folder (/data/TRAIN_NEW) that holds information regarding over 1,200 individuals. It includes the target information we wish to predict, which are the ADHD diagnosis and sex, functional MRI connectome matrices, and socio-demographic information. The latter includes the subject’s “handedness” or the parent’s education level, emotions, and other parenting information. All of the data consists of both quantitative and categorical metadata. 
 
 ## Model training and evaluation
-The refined model is located in the notebook "xgnn_final_model.ipynb". The examples for training and the evaluation results are in it. To comprehensively evaluate our model’s performance, we used the following: Weighted F1 Score, AUC-ROC, and accuracy.
+The refined models, XGBoost and XGNN, are located in the notebooks "xgboost.ipynb", "xgnn_final_model.ipynb", respectively. The examples for training and the evaluation results are in it. To comprehensively evaluate our model’s performance, we used the following: Weighted F1 Score, AUC-ROC, and accuracy.
 
 The baseline models are the GNN model and the Random Forest model located in the notebooks "gnn_notebook_pt3.ipynb" and "random_forest.ipynb", respectively.
 
