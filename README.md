@@ -17,6 +17,8 @@ The WiDS challenge provides a training folder (/data/TRAIN_NEW) that holds infor
 ## Model training and evaluation
 The refined model is located in the notebook "xgnn_final_model.ipynb". The examples for training and the evaluation results are in it. To comprehensively evaluate our model’s performance, we used the following: Weighted F1 Score, AUC-ROC, and accuracy.
 
+The baseline models are the GNN model and the Random Forest model located in the notebooks "gnn_notebook_pt3.ipynb" and "random_forest.ipynb", respectively.
+
 # License
 This project is licensed under the MIT License.
 
